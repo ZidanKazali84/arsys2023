@@ -6,11 +6,11 @@
 @endif
 
 @if (config('adminlte.use_route_url', false))
-    @php( $profile_url = $profile_url ? route($profile_url) : '' )
-    @php( $logout_url = $logout_url ? route($logout_url) : '' )
+    @php( $profile_url = $profile_url ? route('zidan/index') : '' )
+    @php( $logout_url = $logout_url ? route('/login') : '' )
 @else
-    @php( $profile_url = $profile_url ? url($profile_url) : '' )
-    @php( $logout_url = $logout_url ? url($logout_url) : '' )
+    @php( $profile_url = $profile_url ? url('zidan/index') : '' )
+    @php( $logout_url = $logout_url ? url('/login') : '' )
 @endif
 
 <li class="nav-item dropdown user-menu">
@@ -69,7 +69,7 @@
                 </a>
             @endif
             <a class="btn btn-default btn-flat float-right @if(!$profile_url) btn-block @endif"
-               href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+               href="logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <i class="fa fa-fw fa-power-off"></i>
                 {{ __('adminlte::adminlte.log_out') }}
             </a>

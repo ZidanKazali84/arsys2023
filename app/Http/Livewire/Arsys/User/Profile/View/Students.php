@@ -4,7 +4,8 @@ namespace App\Http\Livewire\Arsys\User\Profile\View;
 
 use Livewire\Component;
 use App\Models\ArSys\Student;
-use Auth;
+use Illuminate\Support\Facades\Auth;
+
 
 class Students extends Component
 {

@@ -21,5 +21,8 @@ class Student extends Model
     public function supervisor() {
         return $this->belongsTo(Staff::class, 'supervisor_id', 'id' );
     }
+    public function user() {
+        return $this->belongsTo(student::class, 'user_id', 'id' );
+    }
 
 }

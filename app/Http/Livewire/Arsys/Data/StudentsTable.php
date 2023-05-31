@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\ArSys\Data;
+namespace App\Http\Livewire\Arsys\Data;
 
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;

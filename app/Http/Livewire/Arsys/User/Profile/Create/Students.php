@@ -109,7 +109,8 @@ class Students extends Component
             ]);
             $this->alert('success', 'The profile has been recorded');
             return redirect()->route('arsys.user.profile.view');
-        }else{
+        }
+        else{
             $this->alert('warning', 'The profile is already in database');
             return redirect()->route('arsys.user.profile.view');
         }

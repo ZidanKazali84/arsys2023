@@ -227,25 +227,40 @@ return [
     'menu' => [
        
 
-  
+        [
+            'text'       => 'profile',
+            'route'      => 'zidan.index',
+            'icon'      => 'far fa-light fa-address-card',
+            //'roles'     => ['reviewer', 'committee','author'],
+        ],
         [
             'text'       => 'User Management',
             'route'      => 'arsys.admin.user',
-            'icon'      => 'far fa-fw fa-file',
+            'icon'      => 'far fa-light fa-user',
             //'roles'     => ['reviewer', 'committee','author'],
-        ],
-
+        ], 
+        [
+            'text'       => 'Aplikasi Teknologi Jaringan',
+            'route'      => 'atj.idx',
+            'icon'      => 'far fa-light fa-edit',
+            //'roles'     => ['reviewer', 'committee','author'],
+        ], 
         [
             'text'       => 'Institution',
             'route'      => 'arsys.admin.config.institution',
-            'icon'      => 'far fa-fw fa-file',
+            'icon'      => 'far fa-light fa-building',
             //'roles'     => ['reviewer', 'committee','author'],
         ],
-
+        [
+            'text'       => 'Sidang',
+            'route'      => 'sidang.idx',
+            'icon'      => 'far fa-light fa-envelope ', 
+            //'roles'     => ['reviewer', 'committee','author'],
+        ],
         [
             'text'       => 'Log out',
-            'route'        => 'user.refresh',
-            'icon'      => 'far fa-fw fa-file',
+            'route'      => 'logout',
+            'icon'       => 'far fa-light fa-xmark ', 
             //'roles'     => ['reviewer', 'committee','author'],
         ],
     ],

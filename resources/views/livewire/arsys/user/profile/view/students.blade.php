@@ -14,7 +14,7 @@
                     <x-adminlte-input placeholder="{{$student->program->code}}-{{$student->program->description}}" name="program" label="Program of study" style="width: 100%" disabled/>
                 </div>  
                 <div class="col-md-5">
-                    <x-adminlte-input placeholder="{{$student->specialization->data->abbrev}}-{{$student->specialization->data->description}}" name="specialization" label="Specialization" style="width: 100%" disabled/>
+                    <x-adminlte-input placeholder="{{$student->specialization->abbrev}}-{{$student->specialization->description}}" name="specialization" label="Specialization" style="width: 100%" disabled/>
                 </div>  
             </div>
             <div class="row">

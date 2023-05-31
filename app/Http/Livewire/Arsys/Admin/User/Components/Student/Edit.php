@@ -8,7 +8,7 @@ use App\Models\ArSys\StudySpecializationPivot;
 use App\Models\ArSys\Staff;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use App\Models\ArSys\Student;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class Edit extends Component
 {
