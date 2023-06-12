@@ -8,6 +8,7 @@ use App\Models\kaprodi\event;
 class Idx extends Component
 {
     public $event;
+    public $modeNews = null;
     public function mount()
     {
         $this->event= Event::all();
@@ -19,6 +20,6 @@ class Idx extends Component
     }
     public function addNew()
    {
-        dd("tambah Sidang terbuka");
+       $this -> modeNews= 'add'; 
    }
 }
