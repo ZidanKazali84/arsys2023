@@ -24,7 +24,7 @@
         <div class="col-md-5">
             <div><b>Event ID</b></div>
             <div><b>Event Name</b></div>
-            <div>File PDF</div>
+            <div><a target="_blank" rel="noopener noreferrer" href="http://127.0.0.1:8000/Kaprodi/landing-page/report"><i class="fa fa-file-pdf"></i> <u>File PDF</u></a></div>
         </div>
     </div>
     <br>

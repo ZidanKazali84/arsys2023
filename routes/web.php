@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Suratpdf;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Models\Config_Sympozia;
@@ -48,3 +49,4 @@ Route::get('/atj/landing-page/news/edit', \App\Http\Livewire\Atj\News\Edit::clas
 
 //Kaprodi
 Route::get('/Kaprodi/landing-page',\App\Http\Livewire\Kaprodi\Idx::class)->name('sidang.idx');
+Route::get('/Kaprodi/landing-page/report',[Suratpdf::class, 'showSurat'])->name('PDF.idx');
