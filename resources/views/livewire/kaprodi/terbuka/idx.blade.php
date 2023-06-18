@@ -84,6 +84,6 @@
         </div>
     </div>
     @else
-    @livewire('kaprodi.tertutup.edit')
+    @livewire('kaprodi.terbuka.edit')
     @endif
 </div>
