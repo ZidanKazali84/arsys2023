@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Arsys\Admin\User\Components\Student;
+namespace app\Http\Livewire\Arsys\Admin\User\Components\Student;
 
 use Livewire\Component;
 use App\Models\ArSys\StudyProgram;
