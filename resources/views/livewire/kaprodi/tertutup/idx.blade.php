@@ -52,7 +52,13 @@
                             <td colspan="2"class="text-center"  scope="colgroup">
                             <table>
                             <tr>
-                                <th colspan="1"class="text-center" width="5%">BTM</th>
+                                <th colspan="1"class="text-center" width="5%"><div><b><u>
+                                    @if (!is_null($penguji->examiner))
+                                        {{ $penguji->examiner->code }}
+                                    @else
+                                        Title Not Available
+                                    @endif
+                                </u></b></div></th>
                                 <th colspan="1"class="text-center" width="5%">MMS</th>
                             </tr>
                             <tr>
