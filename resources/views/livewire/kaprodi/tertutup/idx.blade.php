@@ -45,24 +45,25 @@
                             <th colspan="3"class="text-center"  scope="colgroup">Examiners</th>
                           </tr>
                     </thead>
+                    @foreach ($penguji as $index => $item)
                     <tbody>
                         <tr style=" background-color: #ebfffc">
                             <td rowspan="2"class="text-center"style="font-size: 20px; background-color:#99d4cc ; vertical-align:middle;">1</td>
-                            <td rowspan="2"class="text-center"style="vertical-align:middle"><div>kode prodi. NIM</div>MICHAEL CHANDRA PRATAMA</td>
+                            <td rowspan="2"class="text-center"style="vertical-align:middle"><div>kode prodi. NIM</div>   {{ $item->applicant_id}}     </td>
                             <td colspan="2"class="text-center"  scope="colgroup">
                             <table>
                             <tr>
                                 <th colspan="1"class="text-center" width="5%"><div><b><u>
-                                    @if (!is_null($penguji->examiner))
-                                        {{ $penguji->examiner->code }}
-                                    @else
-                                        Title Not Available
-                                    @endif
+                                        {{ $item->examiner_id}}                                
                                 </u></b></div></th>
                                 <th colspan="1"class="text-center" width="5%">MMS</th>
                             </tr>
                             <tr>
+                                @if(!is_null($item->mark))
+                                <td scope="col">{{ $item->mark}}</td>
+                                @else
                                 <td scope="col">000</td>
+                                @endif
                                 <td scope="col">000</td>
                             </tr>
                             </table></td>
@@ -81,6 +82,7 @@
                             </table></td>
                         </tr>
                     </tbody>
+                    @endforeach
                 </table>
             </div>
         </div>

@@ -10,6 +10,7 @@ class Idx extends Component
 {
     public $penguji;
     public $modeNews = null;
+    protected $listeners = ['uploadAddNews'];
     public function render()
     {
       $this->penguji= Examiner::all ();
@@ -18,5 +19,9 @@ class Idx extends Component
     public function addNew()
    {
      $this -> modeNews= 'add';
+   }
+   public function uploadAddNews()
+   {
+    $this -> modeNews= null;
    }
 }
